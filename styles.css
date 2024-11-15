@@ -1,0 +1,317 @@
+body {
+    background-image: url('FONDOO.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Esto añade un filtro oscuro */
+    z-index: -1; /* Lo pone debajo del contenido */
+}
+
+
+/* Encabezado */
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Galería */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    border-color: #444;
+}
+
+/* Carrusel */
+.carrusel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-behavior: smooth;
+}
+
+.carrusel img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Video */
+video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Pie de página */
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+/* Estilo para la sección de Historia */
+#historia {
+    background-color: #f4f4f4; /* Fondo suave */
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#historia h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #444;
+}
+
+#historia p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    color: #555;
+}
+
+#historia img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+#historia img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    border-color: #444;
+}
+/* Estilos para Tipos de Cinturones */
+#tipos-cinturones {
+    margin: 40px 0;
+    text-align: center;
+}
+
+#tipos-cinturones h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#tipos-cinturones table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tipos-cinturones th, #tipos-cinturones td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#tipos-cinturones th {
+    background-color: #444;
+    color: #fff;
+}
+
+#tipos-cinturones td img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    transition: transform 0.3s;
+}
+
+#tipos-cinturones td img:hover {
+    transform: scale(1.1);
+    border-color: #444;
+}
+/* Estilos para Tendencias Actuales */
+#tendencias {
+    margin: 40px 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tendencias h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+}
+
+#tendencias ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tendencias li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+#tendencias li img {
+    width: 80px;
+    height: auto;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    transition: transform 0.3s;
+}
+
+#tendencias li img:hover {
+    transform: scale(1.1);
+    border-color: #444;
+}
+/* Estilos para los Enlaces Útiles */
+#enlaces {
+    margin: 40px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#enlaces h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+}
+
+#enlaces ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#enlaces li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#enlaces a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#enlaces a:hover {
+    color: #0056b3;
+}
